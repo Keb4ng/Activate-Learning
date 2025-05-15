@@ -420,7 +420,7 @@ section{
 
 .apply-section{
     background-image: linear-gradient(0deg, #67a900, #0c8300);
-    padding: 1rem 0;
+    padding: 0;
     position: relative;
 }
 
