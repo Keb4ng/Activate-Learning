@@ -356,6 +356,7 @@ section {
   align-items: center;
   border: solid 1px #cecece;
   padding-left: 1rem;
+  gap: 1.5rem;
 }
 
 .career-card p {
@@ -394,12 +395,6 @@ section {
   font-weight: bold;
   min-width: 300px;
 }
-
-.ccard-loc {
-  min-width: 250px;
-  text-align: center;
-}
-
 .nth-2 {
   margin: 2rem 0;
 }
@@ -413,6 +408,14 @@ section {
   flex-direction: row;
   gap: 0.4rem;
   align-items: center;
+}
+
+.ccard-details {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .course__item-details i {
@@ -1107,6 +1110,29 @@ footer {
 }
 
 @media only screen and (max-width: 991px) {
+  .career-related {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .career-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .career-card a {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .ccard-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+  }
   .main-header {
     display: none;
   }
@@ -1171,6 +1197,18 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  .career-related {
+    grid-template-columns: 1fr;
+  }
+
+  .ccard-title {
+    min-width: unset;
+  }
+
+  .ccard-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .nf-support {
     grid-column: span 1;
   }
