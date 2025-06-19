@@ -349,6 +349,65 @@ section {
   color: white;
 }
 
+.career-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #cecece;
+  padding-left: 1rem;
+}
+
+.career-card p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.career-card a {
+  color: white;
+  background-image: linear-gradient(-90deg, #c7006b, #7c0e6f);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+.career-card a:hover {
+  background-image: linear-gradient(-90deg, #67a900, #0c8300);
+}
+
+.career-related {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.career-card i {
+  font-size: 1.3rem;
+  color: #7c0e6f;
+}
+
+.ccard-title {
+  font-weight: bold;
+  min-width: 300px;
+}
+
+.ccard-loc {
+  min-width: 250px;
+  text-align: center;
+}
+
+.nth-2 {
+  margin: 2rem 0;
+}
+
+.nth-2 #section__mtag {
+  font-size: 1.5rem;
+}
+
 .course__item-details div {
   display: flex;
   flex-direction: row;
