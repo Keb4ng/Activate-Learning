@@ -374,6 +374,8 @@ section {
   display: flex;
   padding: 2rem;
   text-decoration: none;
+  max-width: 200px;
+  width: 100%;
 }
 
 .career-card a:hover {
@@ -1123,6 +1125,7 @@ footer {
 
   .career-card a {
     width: 100%;
+    max-width: unset;
     padding: 1rem;
   }
 
